@@ -4,7 +4,9 @@
 }
 
 body {
+    font-family: 'Inter', system-ui, sans-serif;
     background-color: #060d12;
+    color: white
 }
 
 bar {
@@ -22,7 +24,6 @@ bar .logo img {
 
 bar .socials img {
     filter: brightness(0) invert(1);
-    color: white;
     display: none;
     margin-right: 20px;
     width: 40px;
@@ -40,10 +41,8 @@ bar .socials img.discord:hover {
 }
 
 bar .center {
-    font-family: 'Inter', system-ui, sans-serif;
     font-size: 18px;
     font-weight: bold;
-    color: white;
     display: flex;
     justify-content: center;
     gap: 0px;
@@ -52,13 +51,13 @@ bar .center {
 }
 
 bar .center a {
+    color: white;
     display: none;
     padding: 25px;
     transition: color 0.3s;
     line-height: 72px;
     height: 72px;
     text-decoration: none;
-    color: white
 }
 
 @media (min-width: 572px) {
@@ -75,4 +74,45 @@ bar .center a {
 
 bar .center a:hover {
     color: #ffae00;
+}
+
+
+
+
+
+.hero {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    padding-left: 25%;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .icon {
+    width: 70px;
+    height: auto;
+}
+
+.hero a {
+    font-weight: bold;
+    font-size: 85px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 20px 0 0 0;
+  width: 500px;
+}
+
+.hero-subtext {
+  font-size: 0.9rem;
+  opacity: 0.7;
 }
