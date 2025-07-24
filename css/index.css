@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #060d12;
+}
+
+bar {
+    overflow: hidden;
+    display: flex;
+    height: 71px;
+    border-bottom: 1px solid white;
+    align-items: center;
+}
+
+bar .logo img {
+    padding-left: 20px;
+    width: 60px;
+}
+
+bar .socials img {
+    filter: brightness(0) invert(1);
+    color: white;
+    display: none;
+    margin-right: 20px;
+    width: 40px;
+    transition: filter 0.3s;
+}
+
+bar .socials img.telegram:hover {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(50%) saturate(3707%) hue-rotate(177deg) brightness(92%) contrast(101%);
+    transition: filter 0.3s;
+}
+
+bar .socials img.discord:hover {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(74%) saturate(4178%) hue-rotate(225deg) brightness(98%) contrast(93%);
+    transition: filter 0.3s;
+}
+
+bar .center {
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    flex-grow: 1;
+    align-items: center
+}
+
+bar .center a {
+    display: none;
+    padding: 25px;
+    transition: color 0.3s;
+    line-height: 72px;
+    height: 72px;
+    text-decoration: none;
+    color: white
+}
+
+@media (min-width: 572px) {
+    bar .center a {
+        display: block;
+    }
+}
+
+@media (min-width: 720px) {
+    bar .socials img {
+        display: inline;
+    }
+}
+
+bar .center a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #ffae00;
+}
