@@ -17,11 +17,27 @@ bar .socials a {
     user-select: none;
 }
 
+bar .socials {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
 bar .socials .svg {
+    align-items: center; /* Добавлено для вертикального выравнивания */
+    width: 40px;
+    height: 40px;
     color: white;
     display: none;
-    margin-right: 20px;
     transition: color 0.2s ease, background-color 0.2s ease;
+    background-color: transparent;
+    border-radius: 10px;
+    align-items: center; /* Добавлено для вертикального выравнивания */
+    justify-content: center; /* Добавлено для горизонтального выравнивания */
+}
+
+bar .socials .svg:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 bar .socials .svg.discord:hover {
@@ -60,7 +76,7 @@ bar .center a {
 
 @media (min-width: 720px) {
     bar .socials .svg {
-        display: inline;
+        display: flex;
     }
 }
 
