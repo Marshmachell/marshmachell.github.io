@@ -9,24 +9,27 @@ bar {
 bar .logo img {
     padding-left: 20px;
     width: 60px;
+    cursor: default;
 }
 
-bar .socials img {
-    filter: brightness(0) invert(1);
+bar .socials a {
+    color: transparent;
+    user-select: none;
+}
+
+bar .socials .svg {
+    color: white;
     display: none;
     margin-right: 20px;
-    width: 40px;
-    transition: all 0.3s ease;
+    transition: color 0.2s ease, background-color 0.2s ease;
 }
 
-bar .socials img.telegram:hover {
-    filter: brightness(0) saturate(100%) invert(37%) sepia(50%) saturate(3707%) hue-rotate(177deg) brightness(92%) contrast(101%);
-    transition: all 0.3s ease;
+bar .socials .svg.discord:hover {
+    color: #5865f2;
 }
 
-bar .socials img.discord:hover {
-    filter: brightness(0) saturate(100%) invert(40%) sepia(74%) saturate(4178%) hue-rotate(225deg) brightness(98%) contrast(93%);
-    transition: all 0.3s ease;
+bar .socials .svg.telegram:hover {
+    color: #0088cc;
 }
 
 bar .center {
@@ -56,7 +59,7 @@ bar .center a {
 }
 
 @media (min-width: 720px) {
-    bar .socials img {
+    bar .socials .svg {
         display: inline;
     }
 }
