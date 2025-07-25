@@ -1,0 +1,35 @@
+:root {
+    --waves-container-wave-1: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(7499%) hue-rotate(103deg) brightness(100%) contrast(103%);
+    --waves-container-wave-2: brightness(0) saturate(100%) invert(76%) sepia(31%) saturate(3652%) hue-rotate(127deg) brightness(100%) contrast(100%);
+    --waves-container-wave-3: brightness(0) saturate(100%) invert(60%) sepia(89%) saturate(1203%) hue-rotate(132deg) brightness(96%) contrast(101%);
+    --waves-container-wave-4: brightness(0) saturate(100%) invert(55%) sepia(17%) saturate(4594%) hue-rotate(141deg) brightness(97%) contrast(101%);
+}
+
+.wave {
+    position: fixed;
+    width: 100%;
+    bottom: -6%;
+}
+
+.wave:nth-child(1) {
+    filter: var(--waves-container-wave-1);
+    left: -20%;
+    bottom: -10%
+}
+
+.wave:nth-child(2) {
+    filter: var(--waves-container-wave-2);
+    left: 0%;
+}
+
+.wave:nth-child(3) {
+    filter: var(--waves-container-wave-3);
+    left: 80%;
+    bottom: -10%
+}
+
+.wave:nth-child(4) {
+    filter: var(--waves-container-wave-4);
+    left: 50%;
+    bottom: -10%
+}

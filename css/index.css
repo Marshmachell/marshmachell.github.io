@@ -7,24 +7,3 @@ html, body {
     background-color: #060d12;
     color: white
 }
-
-.wave {
-    position: fixed;
-    width: 100%;
-    bottom: -6%;
-}
-
-.wave:nth-child(1) {
-    filter: var(--waves-container-wave-1);
-    left: -20%;
-}
-
-.wave:nth-child(2) {
-    filter: var(--waves-container-wave-2);
-    left: 0%;
-}
-
-.wave:nth-child(3) {
-    filter: var(--waves-container-wave-3);
-    left: 80%;
-}
