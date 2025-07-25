@@ -19,12 +19,12 @@ bar .socials a {
 
 bar .socials {
     display: flex;
-    gap: 15px;
+    gap: 10px;
     margin-right: 20px;
 }
 
 bar .socials .svg {
-    align-items: center; /* Добавлено для вертикального выравнивания */
+    align-items: center;
     width: 40px;
     height: 40px;
     color: white;
@@ -32,8 +32,8 @@ bar .socials .svg {
     transition: color 0.2s ease, background-color 0.2s ease;
     background-color: transparent;
     border-radius: 10px;
-    align-items: center; /* Добавлено для вертикального выравнивания */
-    justify-content: center; /* Добавлено для горизонтального выравнивания */
+    align-items: center;
+    justify-content: center;
 }
 
 bar .socials .svg:hover {
