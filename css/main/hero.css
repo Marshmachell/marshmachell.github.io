@@ -1,0 +1,86 @@
+.hero {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding-left: 20%;
+    padding-bottom: 100px;
+}
+
+.hero-content {
+    display: none;
+    flex-direction: column;
+}
+
+@media (min-width: 572px) {
+    .hero-content {
+        display: flex;
+    }
+}
+
+.hero .icon {
+    width: 70px;
+    height: auto;
+}
+
+.hero .hero-content a {
+    font-weight: bold;
+    font-size: 85px;
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    margin-bottom: 0;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin: 20px 0 0 0;
+  width: 500px;
+}
+
+.hero .buttons {
+    display: flex;
+    gap: 20px; /* Расстояние между кнопками */
+    margin-top: 25px; /* Отступ от текста сверху */
+}
+
+.hero .button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #142028;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer; /* Изменяем курсор на pointer */
+    user-select: none; /* Запрещаем выделение текста */
+    -webkit-user-select: none; /* Для Safari */
+    -moz-user-select: none; /* Для Firefox */
+    -ms-user-select: none; /* Для IE/Edge */
+}
+
+.hero .button:nth-child(1) {
+    background-color: #215f86;
+}
+
+.hero .button:nth-child(1):hover {
+    filter: brightness(0.75);
+}
+
+.hero .button:nth-child(2) {
+    background-color: transparent;
+}
+
+.hero .button:nth-child(2):hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero .button:hover {
+    transform: translateY(-2px);
+}
+
+.hero-subtext {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    opacity: 0.4;
+}

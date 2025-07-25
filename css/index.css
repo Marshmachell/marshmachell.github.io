@@ -1,118 +1,30 @@
-* {
+html, body {
+    overflow: hidden;
+    height: 100%;
     margin: 0;
     padding: 0;
-}
-
-body {
     font-family: 'Inter', system-ui, sans-serif;
     background-color: #060d12;
     color: white
 }
 
-bar {
-    overflow: hidden;
-    display: flex;
-    height: 71px;
-    border-bottom: 1px solid white;
-    align-items: center;
+.wave {
+    position: fixed;
+    width: 100%;
+    bottom: -6%;
 }
 
-bar .logo img {
-    padding-left: 20px;
-    width: 60px;
+.wave:nth-child(1) {
+    filter: var(--waves-container-wave-1);
+    left: -20%;
 }
 
-bar .socials img {
-    filter: brightness(0) invert(1);
-    display: none;
-    margin-right: 20px;
-    width: 40px;
-    transition: filter 0.3s;
+.wave:nth-child(2) {
+    filter: var(--waves-container-wave-2);
+    left: 0%;
 }
 
-bar .socials img.telegram:hover {
-    filter: brightness(0) saturate(100%) invert(37%) sepia(50%) saturate(3707%) hue-rotate(177deg) brightness(92%) contrast(101%);
-    transition: filter 0.3s;
-}
-
-bar .socials img.discord:hover {
-    filter: brightness(0) saturate(100%) invert(40%) sepia(74%) saturate(4178%) hue-rotate(225deg) brightness(98%) contrast(93%);
-    transition: filter 0.3s;
-}
-
-bar .center {
-    font-size: 18px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    gap: 0px;
-    flex-grow: 1;
-    align-items: center
-}
-
-bar .center a {
-    color: white;
-    display: none;
-    padding: 25px;
-    transition: color 0.3s;
-    line-height: 72px;
-    height: 72px;
-    text-decoration: none;
-}
-
-@media (min-width: 572px) {
-    bar .center a {
-        display: block;
-    }
-}
-
-@media (min-width: 720px) {
-    bar .socials img {
-        display: inline;
-    }
-}
-
-bar .center a:hover {
-    color: #ffae00;
-}
-
-
-
-
-
-.hero {
-    height: calc(100vh - 70px);
-    display: flex;
-    align-items: center;
-    padding-left: 25%;
-}
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-}
-
-.hero .icon {
-    width: 70px;
-    height: auto;
-}
-
-.hero a {
-    font-weight: bold;
-    font-size: 85px;
-    display: flex;
-    align-items: center;
-    gap: 0px;
-    margin-bottom: 0;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  margin: 20px 0 0 0;
-  width: 500px;
-}
-
-.hero-subtext {
-  font-size: 0.9rem;
-  opacity: 0.7;
+.wave:nth-child(3) {
+    filter: var(--waves-container-wave-3);
+    left: 80%;
 }
